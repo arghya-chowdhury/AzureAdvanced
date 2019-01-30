@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Common.UserEntity>
+<h2>Index</h2>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Sex</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Age</td>
+            <td>@item.Sex</td>
+            <td>@item.Email</td>
+        </tr>
+}
+    </tbody>
+</table>

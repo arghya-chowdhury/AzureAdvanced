@@ -1,0 +1,20 @@
+﻿@model string
+<h1>Activate Email</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <input type="text" readonly id="instanceId" name="instanceId" value="@Model" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" name="submit" value="Activate" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
